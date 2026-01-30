@@ -1,0 +1,6 @@
+Total Orders =
+DISTINCTCOUNT ( orders[order_id] )
+
+
+Total Quantity =
+SUM ( order_item[quantity] )
