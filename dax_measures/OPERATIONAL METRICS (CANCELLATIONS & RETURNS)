@@ -1,0 +1,28 @@
+Cancelled Orders =
+CALCULATE (
+    DISTINCTCOUNT ( orders[order_id] ),
+    orders[order_status] = "Cancelled"
+)
+
+
+Cancelled % =
+DIVIDE (
+    [Cancelled Orders],
+    [Total Orders],
+    0
+)
+
+
+Returned Orders =
+CALCULATE (
+    DISTINCTCOUNT ( orders[order_id] ),
+    orders[order_status] = "Returned"
+)
+
+
+Returned % =
+DIVIDE (
+    [Returned Orders],
+    [Total Orders],
+    0
+)
