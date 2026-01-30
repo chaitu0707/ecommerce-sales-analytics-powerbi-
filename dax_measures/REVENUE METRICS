@@ -1,1 +1,18 @@
+Total Revenue =
+SUM ( order_item[total_amount] )
+
+
+Revenue Lost (₹) =
+CALCULATE (
+    [Total Revenue],
+    orders[order_status] IN { "Cancelled", "Returned" }
+)
+
+
+Revenue Leakage % =
+DIVIDE (
+    [Revenue Lost (₹)],
+    [Total Revenue],
+    0
+)
 
