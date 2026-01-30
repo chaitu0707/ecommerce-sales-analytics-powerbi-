@@ -1,0 +1,20 @@
+Total Customers =
+DISTINCTCOUNT ( customers[customer_id] )
+
+
+Repeat Customers =
+CALCULATE (
+    DISTINCTCOUNT ( orders[customer_id] ),
+    FILTER (
+        VALUES ( orders[customer_id] ),
+        [Orders per Customer] > 1
+    )
+)
+
+
+New Customers =
+[Total Customers] - [Repeat Customers]
+
+
+Orders per Customer =
+COUNT ( orders[order_id] )
