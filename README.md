@@ -42,7 +42,7 @@ Data covers:
 - Revenue by city and product
 - Payment method analysis
 
-![Page 1](screenshots/page1_sales_overview.png)
+![Page 1](screenshots/page1_sales_overview.png.png)
 
 ---
 
@@ -52,7 +52,7 @@ Data covers:
 - Repeat vs new customers
 - Customer and product insights
 
-![Page 2](screenshots/page2_product_customer.png)
+![Page 2](screenshots/page2_product_customer.png.png)
 
 ---
 
@@ -62,7 +62,7 @@ Data covers:
 - Revenue lost due to cancellations and returns
 - Operational risk insights
 
-![Page 3](screenshots/page3_operations_leakage.png)
+![Page 3](screenshots/page3_operations_leakage.png.png)
 
 ---
 
